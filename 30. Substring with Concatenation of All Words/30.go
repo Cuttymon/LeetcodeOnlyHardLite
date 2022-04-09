@@ -2,10 +2,7 @@ func findSubstring(s string, words []string) []int {
 	if len(words) == 0 || len(s) == 0 {
 		return []int{}
 	}
-	wordLen := len(words[0])
-	wordNum := len(words)
-	s_len := len(s)
-	wordMap := map[string]int{}
+	wordLen, wordNum, s_len, wordMap := len(words[0]), len(words), len(s), map[string]int{}
 	for _, word := range words {
 		wordMap[word]++
 	}
