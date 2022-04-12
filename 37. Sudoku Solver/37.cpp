@@ -28,7 +28,7 @@ public:
             // 判断 board[i][j] 是否可以填入 num
             if (isValid(board, row, col, k))
             {
-                // 如果可以填入，就填入，并继续判断下一个位置
+                // 填入，并继续判断下一个位置
                 board[row][col] = k;
                 if (solve(board, row, col + 1))
                     return true;
