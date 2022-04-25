@@ -35,7 +35,7 @@ public:
             return memo[key];
         bool ans = false;
         if (p[j] == '.' || p[j] == s[i])
-        {   
+        {
             if (j + 1 < n && p[j + 1] == '*')
             {
                 ans = dp(s, i + 1, p, j) || dp(s, i, p, j + 2);
